@@ -53,7 +53,7 @@ export default function Single() {
           <img
             src={
               post?.userImg ||
-              "https://images.pexels.com/photos/13009437/pexels-photo-13009437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              "https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png"
             }
             alt=""
           />

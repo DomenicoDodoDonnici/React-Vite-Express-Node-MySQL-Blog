@@ -2,6 +2,7 @@
   --primary-color: #d9b99b;
   --secondary-color: #eed9c4;
   --third-color: #e4d5b7;
+  --forth-color: #f5f5f5;
   --background-color: #f3ece3;
   --text-color: #333333;
   --font-family: "Open Sans", sans-serif;
@@ -29,7 +30,7 @@ body {
   font-family: var(--font-family);
 
   .container {
-    width: 100%;
+    width: 95%;
     color: var(--text-color);
 
     .link {
@@ -55,7 +56,7 @@ body {
         display: flex;
         flex-direction: column;
         padding: 50px;
-        background-color: white;
+        background-color: var(--forth-color);
         width: 200px;
         gap: 20px;
 
@@ -79,30 +80,29 @@ body {
     }
 
     .navbar {
-      width: 100%; // Larghezza massima
+      width: 100%;
       background-color: var(--primary-color);
-      color: whitesmoke;
+      color: var(--forth-color);
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
       .container {
-        max-width: 100%; // Larghezza massima del contenitore
+        max-width: 100%;
         padding: 15px 10px;
-        margin: 0 auto; // Centra il contenitore
+        margin: 0 auto;
         display: flex;
         align-items: center;
         display: flex;
         justify-content: flex-start;
 
         .logo img {
-          width: 120px;
-          // Rimuove l'effetto hover
+          width: 200px;
         }
 
         .links {
           display: flex;
           align-items: center;
           gap: 20px;
-          margin-left: 50%; // Aggiungi un margine a sinistra per spostare i link verso il centro
+          margin-left: 20%;
 
           h6 {
             font-size: 16px;
@@ -110,7 +110,7 @@ body {
             transition: color 0.3s ease;
 
             &:hover {
-              color: whitesmoke;
+              color: var(--forth-color);
               cursor: pointer;
             }
           }
@@ -120,283 +120,259 @@ body {
             transition: color 0.3s ease;
 
             &:hover {
-              color: whitesmoke;
+              color: var(--forth-color);
             }
-          }
-
-          .write {
-            background-color: var(--third-color); // Cambia colore di sfondo
-            width: auto; // Larghezza automatica
-            height: 40px; // Altezza fissa
-            padding: 0 15px; // Padding orizzontale
-            border-radius: 20px; // Bordi arrotondati
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 500;
-            color: white; // Colore del testo
-            border: none; // Rimuove il bordo
-            transition: background-color 0.3s ease, transform 0.3s ease;
-
-            &:hover {
-              background-color: var(
-                --secondary-color
-              ); // Cambia colore al passaggio del mouse
-              transform: scale(1.1); // Effetto di ingrandimento
-            }
-
-            span {
-              margin-left: 10px; // Spazio tra icona e testo
-            }
-          }
-        }
-      }
-    }
-
-    footer {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      margin-top: 0;
-      padding: 20px;
-      background-color: var(--background-color);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 12px;
-      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    //HOME Section
-    .home {
-      .posts {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        gap: 150px;
-
-        .post {
-          display: flex;
-          gap: 100px;
-
-          &:nth-child(2n + 1) {
-            flex-direction: row-reverse;
-          }
-
-          .img {
-            flex: 2;
-            position: relative;
-
-            &::after {
-              content: "";
-              width: 100%;
-              height: 100%;
-              background-color: var(--background-color);
-              position: absolute;
-              top: 20px;
-              left: -20px;
-              z-index: -1;
-            }
-
-            img {
-              width: 100%;
-              max-height: 400px;
-              object-fit: cover;
-            }
-          }
-
-          .content {
-            flex: 3;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            h1 {
-              font-size: 48px;
-            }
-
-            p {
-              font-size: 18px;
-            }
-
-            button {
-              @include button-style;
-              width: max-content;
-              padding: 10px 20px;
-            }
-          }
-        }
-      }
-    }
-
-    //SINGLE Section
-    .single {
-      display: flex;
-      gap: 50px;
-
-      .content {
-        flex: 5;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-
-        img {
-          width: 100%;
-          height: 300px;
-          object-fit: cover;
-        }
-
-        .user {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          font-size: 14px;
-
-          img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
           }
 
           span {
-            font-weight: bold;
+            margin-left: 10px;
           }
-        }
-
-        .edit {
-          display: flex;
-          gap: 5px;
-
-          img {
-            width: 20px;
-            height: 20px;
-            cursor: pointer;
-          }
-        }
-
-        h1 {
-          font-size: 42px;
-          color: var(--text-color);
-        }
-
-        p {
-          text-align: justify;
-          line-height: 30px;
         }
       }
+    }
+  }
 
-      .menu {
-        flex: 2;
+  footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  // HOME Section
+
+  .home {
+    .posts {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 150px;
+
+      .post {
         display: flex;
-        flex-direction: column;
-        gap: 25px;
+        gap: 100px;
 
-        h1 {
-          font-size: 20px;
-          color: var(--text-color);
-        }
+        .img {
+          flex: 2;
+          position: relative;
 
-        .post {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
+          &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: var(--background-color);
+            position: absolute;
+            top: 20px;
+            left: -20px;
+            z-index: -1;
+          }
 
           img {
             width: 100%;
-            height: 200px;
+            max-height: 400px;
             object-fit: cover;
           }
+        }
 
-          h2 {
-            color: var(--text-color);
+        .content {
+          flex: 3;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          h1 {
+            font-size: 48px;
+          }
+
+          p {
+            font-size: 18px;
           }
 
           button {
             @include button-style;
             width: max-content;
-            padding: 7.5px 15px;
+            padding: 10px 20px;
           }
         }
       }
     }
+  }
 
-    //WRITE Section
-    .add {
-      margin-top: 20px;
+  // SINGLE Section
+
+  .single {
+    display: flex;
+    gap: 50px;
+
+    .content {
+      flex: 5;
       display: flex;
-      gap: 20px;
+      flex-direction: column;
+      gap: 30px;
 
-      .content {
-        flex: 5;
+      img {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        margin-top: 15px;
+      }
+
+      .user {
         display: flex;
-        flex-direction: column;
-        gap: 20px;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
 
-        input {
-          padding: 10px;
-          border: 1px solid lightgray;
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          object-fit: cover;
         }
 
-        .editorContainer {
-          height: 300px;
-          overflow: scroll;
-          border: 1px solid lightgray;
-
-          .editor {
-            height: 100%;
-            border: none;
-          }
+        span {
+          font-weight: bold;
         }
       }
 
-      .menu {
-        flex: 2;
+      .edit {
+        display: flex;
+        gap: 5px;
+
+        img {
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+        }
+      }
+
+      h1 {
+        font-size: 42px;
+        color: var(--text-color);
+      }
+
+      p {
+        text-align: justify;
+        line-height: 30px;
+      }
+    }
+
+    .menu {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      h1 {
+        font-size: 20px;
+        color: var(--text-color);
+      }
+
+      .post {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
 
-        .item {
-          border: 1px solid lightgray;
-          padding: 10px;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          font-size: 12px;
+        img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+
+        h2 {
           color: var(--text-color);
+        }
 
-          h1 {
-            font-size: 20px;
+        button {
+          @include button-style;
+          width: max-content;
+          padding: 7.5px 15px;
+        }
+      }
+    }
+  }
+
+  // WRITE Section
+
+  .add {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+
+    .content {
+      flex: 5;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      input {
+        padding: 10px;
+        border: 1px solid lightgray;
+      }
+
+      .editorContainer {
+        height: 300px;
+        overflow: scroll;
+        border: 1px solid lightgray;
+        background-color: var(--forth-color);
+
+        .editor {
+          height: 100%;
+          border: none;
+        }
+      }
+    }
+
+    .menu {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .item {
+        border: 1px solid lightgray;
+        padding: 10px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 12px;
+        color: var(--text-color);
+        background-color: var(--forth-color);
+
+        h1 {
+          font-size: 20px;
+        }
+
+        .file {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+
+        .buttons {
+          display: flex;
+          justify-content: space-between;
+
+          :first-child {
+            @include button-style;
+            padding: 3px 5px;
           }
-
-          .file {
-            text-decoration: underline;
-            cursor: pointer;
+          :last-child {
+            @include button-style;
+            padding: 3px 5px;
+            background-color: var(--third-color);
           }
+        }
 
-          .buttons {
-            display: flex;
-            justify-content: space-between;
-
-            :first-child {
-              @include button-style;
-              padding: 3px 5px;
-            }
-            :last-child {
-              @include button-style;
-              padding: 3px 5px;
-              background-color: var(--third-color);
-            }
-          }
-
-          .cat {
-            display: flex;
-            align-items: center;
-            gap: 2px;
-            color: var(--text-color);
-          }
+        .cat {
+          display: flex;
+          align-items: center;
+          gap: 2px;
+          color: var(--text-color);
         }
       }
     }

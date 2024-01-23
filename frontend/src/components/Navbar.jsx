@@ -38,7 +38,7 @@ const Navbar = () => {
             <span onClick={logout}>Logout</span>
           ) : (
             <Link className="link" to="/login">
-              Login
+              <span>Login</span>
             </Link>
           )}
           <span className="write">
