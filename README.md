@@ -1,4 +1,4 @@
-# React-Vite-Express-Node-MySQL-Blog
+# React_Blog
 
 Questo progetto è un'applicazione blog completa che separa le preoccupazioni tra il front-end e il back-end. Il front-end è costruito con Vite e React, utilizzando Sass per una gestione avanzata degli stili CSS. Il back-end si appoggia su Node.js con il framework Express e utilizza MySQL come sistema di gestione del database, permettendo così di gestire i dati relativi a blog e utenti.
 
@@ -22,7 +22,7 @@ Prima di iniziare, assicurati di avere installato sul tuo sistema:
 Se hai Git installato, puoi clonare il progetto direttamente dal repository GitHub utilizzando il seguente comando:
 
 ```bash
-git clone https://github.com/DomenicoDodoDonnici/React-Vite-Express-Node-MySQL-Blog.git
+git clone https://github.com/DomenicoDodoDonnici/React_Blog.git
 ```
 
 Se non hai Git, puoi semplicemente scaricare il progetto come file ZIP dal sito GitHub e decomprimerlo nel tuo sistema.
@@ -40,7 +40,7 @@ Se non hai Git, puoi semplicemente scaricare il progetto come file ZIP dal sito 
 2. Naviga alla cartella `backend` del progetto clonato o scaricato:
 
 ```bash
-cd React-Vite-Express-Node-MySQL-Blog/backend
+cd React_Blog/backend
 ```
 
 3. Installa le dipendenze del progetto eseguendo:
@@ -75,7 +75,7 @@ Il server dovrebbe ora essere in esecuzione e in ascolto per le richieste.
 2. Naviga alla cartella `frontend` del progetto:
 
 ```bash
-cd React-Vite-Express-Node-MySQL-Blog/frontend
+cd React_Blog/frontend
 ```
 
 3. Installa le dipendenze del progetto eseguendo:
